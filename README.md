@@ -2,6 +2,20 @@
 
 Plugin que dá ao Claude Code um pipeline completo pra **clonar, limpar e reescrever páginas de lançamento** (landing pages de infoprodutos, páginas de vendas, captura, obrigado) preservando a identidade visual do original.
 
+## O jeito mais fácil: a linha mágica
+
+Abra qualquer pasta no VS Code, abra o chat do Claude e cole:
+
+> Baixe o conteúdo de https://github.com/berdantx/clone-and-clean-plugin e instale a skill pra mim: copie a pasta skills/clone-and-clean de dentro do repositório para a pasta .claude/skills da minha pasta de usuário, ficando em ~/.claude/skills/clone-and-clean/SKILL.md. Não deixe subpasta extra, confira que o SKILL.md está nesse caminho e me avise quando terminar.
+
+Depois feche o chat e abra um novo. Pergunte "quais skills você tem?" e `clone-and-clean` aparece na lista.
+
+Pré-requisitos pra usar: extensão **Claude in Chrome** no navegador e **Python 3** instalado.
+
+Prefere o caminho de plugin? `/plugin marketplace add berdantx/clone-and-clean-plugin` e depois `/plugin install clone-and-clean`.
+
+---
+
 ## O que o plugin faz
 
 Recebe uma URL e entrega três artefatos organizados:
